@@ -2,22 +2,32 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
 
-h1,h2 {
+h1,h2,h3 {
     font-family: "DM Serif Display";
 }
 
+h2,h3 {
+    color: #7E4333;
+}
 p,a,li {
     font-family: "DM Sans";
+    line-height: 24px;
+    font-size: 16px;
 }
 
 
 * {
     margin: 0;
     box-sizing: border-box;
+    font-weight: 400;
+}
+
+body {
+    background-color: #F3E5D8;
 }
 
 header nav {
-    padding: 10px;
+    padding: 10px 20px;
     margin: 20px;
     border-radius: 6px;
     display: flex;
@@ -33,4 +43,60 @@ header nav h1 {
 header nav a {
     text-decoration: none;
     color: white;
+}
+
+div.grid-container {
+    justify-content: center;
+    margin: 40px auto 60px auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 35%;
+    grid-template-rows: 20% 20% 20% 20%;
+    margin-top: 40px;
+}
+
+main div.recipeimage {
+    height: 287px;
+    text-align: center;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 5px;
+}
+main div.recipeimage img {
+    border-radius: 5px;
+    height: 278px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+main {
+    padding: 20px;
+    grid-area: 1/1/6/4;
+    background-color: white;
+    margin-right: 20px;
+    border-radius: 6px;
+}
+
+main h2 {
+font-size: 40px;
+margin-top: 12px;
+}
+
+main li {
+    margin: 5px;
+}
+aside {
+    grid-area: 1/4/3/4;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    padding: 20px;
+}
+section {
+    grid-area: 3/4;
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
 }
