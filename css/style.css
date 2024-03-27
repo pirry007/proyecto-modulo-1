@@ -2,20 +2,34 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
 
-h1,h2,h3 {
+h1,h2,h3,h4 {
     font-family: "DM Serif Display";
 }
 
 h2,h3 {
     color: #7E4333;
+    margin-bottom: 10px;
 }
-p,a,li {
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+p,li,td {
     font-family: "DM Sans";
     line-height: 24px;
     font-size: 16px;
+    font-weight: 500;
 }
 
-
+a {
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 300;
+}
 * {
     margin: 0;
     box-sizing: border-box;
@@ -50,9 +64,32 @@ div.grid-container {
     margin: 40px auto 60px auto;
     max-width: 1000px;
     display: grid;
-    grid-template-columns: 25% 25% 25% 35%;
-    grid-template-rows: 20% 20% 20% 20%;
+    grid-template-columns: 25% 25% 25% 40%;
+    grid-template-rows: 20% 30% 20% 20%;
     margin-top: 40px;
+}
+
+
+main {
+    padding: 20px;
+    grid-area: 1/1/6/4;
+    background-color: white;
+    margin-right: 20px;
+    border-radius: 6px;
+}
+
+aside {
+    grid-area: 1/4/3/4;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    padding: 20px;
+}
+section {
+    grid-area: 3/4/5/4;
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
 }
 
 main div.recipeimage {
@@ -70,33 +107,82 @@ main div.recipeimage img {
     object-fit: cover;
     
 }
-
-main {
-    padding: 20px;
-    grid-area: 1/1/6/4;
-    background-color: white;
-    margin-right: 20px;
-    border-radius: 6px;
-}
-
 main h2 {
-font-size: 40px;
-margin-top: 12px;
+    font-size: 40px;
+    margin-top: 12px;
 }
 
-main li {
-    margin: 5px;
+main ol {
+    padding-left: 20px;
 }
-aside {
-    grid-area: 1/4/3/4;
-    background-color: white;
+
+main div.preparation-time {
+    background-color: #FFF7FC;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+main div.preparation-time h3 {
+    margin-top: 0;
+}
+
+
+aside ul {
     margin-bottom: 20px;
-    border-radius: 6px;
-    padding: 20px;
+    padding-left: 30px;
 }
-section {
-    grid-area: 3/4;
-    background-color: white;
-    border-radius: 6px;
-    padding: 20px;
+
+aside table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+aside table tr td {
+    border-spacing: 8px;
+    border-bottom: solid #7E4333 1px;
+    padding: 8px 0;
+}
+
+td.color-cell {
+    font-weight: bold;
+    color: #7E4333;
+    text-align: right;
+    padding-right: 20px;
+}
+
+td#Calories {
+padding-right: 0;
+}
+
+section div.more-recipes-flex {
+    display: flex;
+    
+}
+
+section div.more-recipes-img {
+    height: 80px;
+    width: 80px;
+}
+
+section div img {
+    max-width: 100%;
+    
+}
+
+footer {
+    padding: 10px 20px;
+    margin: 20px 20px 0 20px;
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #255538;
+    height: 78px;
+}
+
+footer .footer {
+    color: white;
+    margin: 0;
 }
