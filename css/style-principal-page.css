@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+
+
+h1,h2,h3,h4 {
+    font-family: "DM Serif Display";
+}
+
+h2,h3 {
+    color: #7E4333;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+p,li,td {
+    font-family: "DM Sans";
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+a {
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 300;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+body {
+    background-color: #F3E5D8;
+}
+
+nav {
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #255538;
+}
+
+ nav h1 {
+    color: white;
+}
+
+ nav a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background-image: url(../images/5a80e6e1cd7c7ea0f50d200b0ad11587.png);
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+
+header h1 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.199);
+    font-size: 64px;
+    padding: 106.5px 560.094px 106.5px 0;
+    border-radius: 5px;
+}
