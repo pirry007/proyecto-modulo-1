@@ -1,3 +1,8 @@
-var numero = 10
+const darkMode = document.querySelector("#dark-mode")
 
-console.log(numero)
+const body = document.body
+
+
+darkMode.addEventListener("click", function() {
+    body.classList.toggle("dark-mode")
+} )

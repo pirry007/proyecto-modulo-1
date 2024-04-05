@@ -38,6 +38,7 @@ a {
 
 body {
     background-color: #F3E5D8;
+    transition: 0.3s;
 }
 
 header nav {
@@ -55,9 +56,19 @@ header nav #logo {
     margin: 0;
 }
 
+header nav div {
+    display: flex;
+    align-items: center;
+}
 header nav a {
     text-decoration: none;
     color: white;
+}
+
+header nav #dark-mode {
+    margin-left: 10px;
+    align-self: center;
+    height: 34px;
 }
 
 div.grid-container {
@@ -77,6 +88,7 @@ main {
     background-color: white;
     margin-right: 20px;
     border-radius: 6px;
+    transition: 0.3s;
 }
 
 aside {
@@ -85,12 +97,14 @@ aside {
     margin-bottom: 20px;
     border-radius: 6px;
     padding: 20px;
+    transition: 0.3s;
 }
 section {
     grid-area: 3/4/5/4;
     background-color: white;
     border-radius: 6px;
     padding: 20px;
+    transition: 0.3s;
 }
 
 main div.recipeimage {
@@ -121,6 +135,7 @@ main div.preparation-time {
     background-color: #FFF7FC;
     padding: 20px;
     margin: 20px 0;
+    border-radius: 5px;
 }
 
 main div.preparation-time h3 {
@@ -163,18 +178,24 @@ section div.more-recipes-flex {
 }
 
 section div.more-recipes-img {
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
+    margin-right: 20px;
 }
 
+section div a img {
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
 section a {
     text-decoration: none;
     color: black;
     display: flex;
+    align-items: center;
     margin: 5px;
-}
-section div img {
-    max-height: 100%;
 }
 
 footer {
@@ -191,4 +212,64 @@ footer {
 footer .footer {
     color: white;
     margin: 0;
+}
+
+.dark-mode{
+    color: white;
+    background-color: black;
+}
+
+.dark-mode h1 {
+    color: white;
+}
+
+.dark-mode h2 {
+    color: white;
+}
+
+.dark-mode h3 {
+    color: white;
+}
+
+.dark-mode h4 {
+    color: white;
+}
+
+.dark-mode p {
+    color: white;
+}
+
+.dark-mode li {
+    color: white;
+}
+
+.dark-mode td{
+    border-bottom: solid #595959 1px;;
+}
+
+.dark-mode td.color-cell {
+    color: white;
+}
+
+.dark-mode section {
+    color: white;
+    background-color: #2F2F2F;
+}
+
+.dark-mode main {
+    color: white;
+    background-color: #2F2F2F;
+}
+
+.dark-mode aside {
+    color: white;
+    background-color: #2F2F2F;
+}
+
+.dark-mode aside div {
+    background-color: #2F2F2F;
+}
+
+.dark-mode main div {
+    background-color: #4E4D4E;
 }
