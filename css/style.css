@@ -9,6 +9,7 @@ h1,h2,h3,h4 {
 h1,h2,h3 {
     color: #7E4333;
     margin-bottom: 10px;
+    transition: 0.3s;
 }
 
 h3 {
@@ -23,9 +24,11 @@ p,li,td {
     line-height: 24px;
     font-size: 16px;
     font-weight: 500;
+    transition: 0.3s;
 }
 
 a {
+    text-decoration: none;
     font-family: "DM Sans";
     font-size: 16px;
     font-weight: 300;
@@ -136,6 +139,7 @@ main div.preparation-time {
     padding: 20px;
     margin: 20px 0;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 main div.preparation-time h3 {
