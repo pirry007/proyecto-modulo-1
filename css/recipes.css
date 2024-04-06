@@ -79,6 +79,7 @@ div.grid-container {
     margin: 40px auto 60px auto;
     max-width: 1000px;
     display: grid;
+    gap: 20px;
     grid-template-columns: 25% 25% 25% 40%;
     grid-template-rows: 20% 30% 20% 20%;
     margin-top: 40px;
@@ -89,7 +90,6 @@ main {
     padding: 20px;
     grid-area: 1/1/6/4;
     background-color: white;
-    margin-right: 20px;
     border-radius: 6px;
     transition: 0.3s;
 }
@@ -97,7 +97,6 @@ main {
 aside {
     grid-area: 1/4/3/4;
     background-color: white;
-    margin-bottom: 20px;
     border-radius: 6px;
     padding: 20px;
     transition: 0.3s;
@@ -112,6 +111,7 @@ section {
 
 main div.recipeimage {
     height: 287px;
+    width: 100%;
     text-align: center;
     background-size: cover;
     background-position: 50%;
@@ -123,7 +123,7 @@ main div.recipeimage img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    
+    aspect-ratio: 1/1;
 }
 main h1 {
     font-size: 40px;
@@ -276,4 +276,15 @@ footer .footer {
 
 .dark-mode main div {
     background-color: #4E4D4E;
+}
+
+@media (max-width: 768px) {
+    div.grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        margin-bottom: 0;
+    }
 }
