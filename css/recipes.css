@@ -77,11 +77,11 @@ header nav #dark-mode {
 div.grid-container {
     justify-content: center;
     margin: 40px auto 60px auto;
-    max-width: 1000px;
+    max-width: 1100px;
     display: grid;
     gap: 20px;
-    grid-template-columns: 25% 25% 25% 40%;
-    grid-template-rows: 20% 30% 20% 20%;
+    grid-template-columns: 20% 20% 25% 35%;
+    grid-template-rows: repeat(4,auto);
     margin-top: 40px;
 }
 
@@ -134,6 +134,9 @@ main ol {
     padding-left: 20px;
 }
 
+main li {
+    margin-bottom: 10px;
+}
 main div.preparation-time {
     background-color: #FFF7FC;
     padding: 20px;
@@ -182,24 +185,26 @@ section div.more-recipes-flex {
 }
 
 section div.more-recipes-img {
-    height: 90px;
-    width: 90px;
-    margin-right: 20px;
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
 }
 
 section div a img {
     height: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
-    margin-right: 20px;
     border-radius: 5px;
 }
 section a {
     text-decoration: none;
     color: black;
     display: flex;
-    align-items: center;
     margin: 5px;
+}
+
+section p {
+    font-size: small;
 }
 
 footer {
@@ -286,5 +291,9 @@ footer .footer {
 
     main {
         margin-bottom: 0;
+    }
+
+    section p {
+        font-size: medium;
     }
 }
