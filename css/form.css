@@ -161,8 +161,10 @@ footer .footer {
 
 .dark-mode input {
     background-color: #4E4D4E;
+    color: white;
 }
 
 .dark-mode textarea {
     background-color: #4E4D4E;
+    color: white;
 }
